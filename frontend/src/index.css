@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 1440px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn {
+    background-color: #0067FF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    margin-top: 38px;
+  }
+  .heading {
+    font-size: 44px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #181A;
+  }
+  .text__para {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #4E545F;
+    margin-top: 18px;
+  }
+  .header {
+    @apply bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[100px] leading-[30px];
+  }
+  .hero__section {
+    @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover ;
+  }
+  .form__label {
+    @apply text-textColor font-semibold text-[16px] leading-7 mb-2;
+  }
+  .form__input {
+    @apply w-full px-4 py-3 border border-solid border-[#0066ff61] focus:outline-none focus:border-primaryColor text-[16px] leading-7
+    text-headingColor placeholder:text-textColor cursor-pointer rounded-md;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .text__para {
+    font-size: 16px;
+    line-height: 1.75; 
+    margin-top: 3px;
+  }
+}
